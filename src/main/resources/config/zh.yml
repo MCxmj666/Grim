@@ -1,16 +1,17 @@
+# 汉化by MC_xmj666星敏 , Nuym
 # GrimAC主要配置
 # 源代码链接: https://github.com/MWHunter/Grim
 # 版权归 DefineOutside 和 贡献者所有，基于GPLv3开源协议。
 #修改过的二进制文件，或带有复制的Grim代码的插件，必须是私有的，或提供完整的源代码给买家，而不需要额外的成本。
 
 alerts:
-  # 管理员进入时是否自动开启警告？
+  # 管理员进入时,是否向管理员发送警告信息？
   enable-on-join: true
-  # 是否在控制台显示警告？
+  # 是否在控制台显示警告信息？
   print-to-console: true
 
 client-brand:
-  # 这意味着如果客户端型号匹配以下正则表达式，它将不会将其客户端型号传播给运营商
+  # 这意味着如果客户端型号匹配以下正则表达式，它将不会将其客户端型号传播给运营商(服务器)
   ignored-clients:
     - "^vanilla$"
     - "^fabric$"
@@ -18,9 +19,9 @@ client-brand:
     - "^Feather Fabric$"
 
 spectators:
-  # 把所有拥有 grim.spectartor 权限的人都隐藏起来，不管他是否观察玩家。
+  # 把所有拥有 grim.spectartor 权限的人隐藏起来，不管他是否观察玩家。
   hide-regardless: false
-  # 让观察者只隐藏在这些世界里
+  # 使观察者只在这些世界里隐藏
   allowed-worlds:
     - ""
 
@@ -72,9 +73,9 @@ NoSlow:
   alert-interval: 25
 
 Knockback:
-  # 有多少反击退是“作弊”
-  # 默认情况下这是 1e-5，这是安全和理智的
-  # 以正确移动的块为单位测量
+  # 什么范围内的反击退属于是“作弊”行为
+  # 默认情况下这是 1e-5，这是安全和正确的
+  # 以正确移动的方块为单位来测量
   threshold: 0.00001
   setbackvl: 10
   decay: 0.025
@@ -89,13 +90,13 @@ Explosion:
   alert-interval: 5
 
 TimerA:
-  # 1.0005 Timer检查
+  # 1.0005 Timer检测
   decay: 0.005
   setbackvl: 10
   dont-alert-until: 5
   alert-interval: 5
   # 玩家落后时可以累积以供以后使用的毫秒数
-  # 如果设置得太高，可能会允许 1.8 快速使用/快速治疗/快速弓箭绕过，120 毫秒似乎是一个很好的平衡
+  # 如果设置得太高，可能会允许 1.8 快速使用/快速治疗/快速弓箭绕过，120 毫秒似乎是一个很好的平衡，正好适合
   drift: 120
 
 # 与 TimerA 相同的检查方法，但适用于坐骑
