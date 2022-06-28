@@ -4,13 +4,13 @@
 #修改过的二进制文件，或带有复制的Grim代码的插件，必须是私有的，或提供完整的源代码给买家，而不需要额外的成本。
 
 alerts:
-  # 管理员进入时是否自动开启警告？
+  #拥有 grim.alerts 权限的玩家是否在加入该服务器时收到警报？
   enable-on-join: true
-  # 是否在控制台显示警告？
+  # 是否在控制台显示警报？
   print-to-console: true
 
 client-brand:
-  # 这意味着如果客户端型号匹配以下正则表达式，它将不会将其客户端型号传播给运营商
+  # 这意味着如果客户端型号匹配以下正则表达式，它将不会将其客户端型号传播给运营商(服务器)
   ignored-clients:
     - "^vanilla$"
     - "^fabric$"
@@ -18,9 +18,9 @@ client-brand:
     - "^Feather Fabric$"
 
 spectators:
-  # 把所有拥有 grim.spectartor 权限的人都隐藏起来，不管他是否观察玩家。
+  # 把所有拥有 grim.spectartor 权限的观察者都隐藏起来，不管他是否在观察其他玩家。
   hide-regardless: false
-  # 让观察者只隐藏在这些世界里
+  # 让这些观察者只隐藏在这些世界里
   allowed-worlds:
     - ""
 
